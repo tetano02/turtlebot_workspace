@@ -1,0 +1,21 @@
+[1.011s] Invoking command in '/home/ste/my_ros2_ws/src/turtlebot_controller': PYTHONPATH=/home/ste/my_ros2_ws/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/ste/my_ros2_ws/build/turtlebot_controller/build install --record /home/ste/my_ros2_ws/build/turtlebot_controller/install.log --single-version-externally-managed install_data
+[1.381s] running egg_info
+[1.383s] writing ../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+[1.383s] writing dependency_links to ../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+[1.384s] writing entry points to ../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+[1.384s] writing requirements to ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+[1.384s] writing top-level names to ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+[1.387s] reading manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[1.389s] writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[1.389s] running build
+[1.389s] running build_py
+[1.389s] running install
+[1.390s] running install_lib
+[1.392s] running install_data
+[1.393s] running install_egg_info
+[1.395s] removing '/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.396s] Copying ../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+[1.398s] running install_scripts
+[1.428s] Installing move_turtle script to /home/ste/my_ros2_ws/install/turtlebot_controller/lib/turtlebot_controller
+[1.429s] writing list of installed files to '/home/ste/my_ros2_ws/build/turtlebot_controller/install.log'
+[1.460s] Invoked command in '/home/ste/my_ros2_ws/src/turtlebot_controller' returned '0': PYTHONPATH=/home/ste/my_ros2_ws/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/ste/my_ros2_ws/build/turtlebot_controller/build install --record /home/ste/my_ros2_ws/build/turtlebot_controller/install.log --single-version-externally-managed install_data

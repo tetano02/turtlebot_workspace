@@ -1,0 +1,3 @@
+[console_scripts]
+move_turtlebot = turtlebot_controller.move_turtlebot:main
+

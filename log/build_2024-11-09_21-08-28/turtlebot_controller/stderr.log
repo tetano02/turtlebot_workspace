@@ -1,0 +1,5 @@
+  File "/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_csv_handler.py", line 136
+    file_name = f"{date_str}_{file_number}_{"back_home" if self.back_home else "to_goal"}robot_data.csv"
+                                             ^^^^^^^^^
+SyntaxError: f-string: expecting '}'
+
