@@ -60,7 +60,7 @@ class DataLoggerNode(Node):
         self.back_home = False
 
         # Imposta un timer per il logging periodico
-        self.create_timer(1.0, self.log_data)  # Esegue log_data ogni 1 secondo
+        self.create_timer(1.0, self.check_data)  # Esegue check_data ogni 1 secondo
     
     def cmd_vel_callback(self, msg): 
         """Callback per il topic /cmd_vel"""
@@ -93,7 +93,7 @@ class DataLoggerNode(Node):
 
         return time_only.strftime("%H:%M:%S")
 
-    def log_data(self):
+    def check_data(self):
         """Log dei dati nel DataFrame"""
 
         # Visualizza man mano i dati

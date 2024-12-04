@@ -5,7 +5,6 @@ from nav2_msgs.action import NavigateToPose
 from rclpy.action import ActionClient
 from std_msgs.msg import Float32, Bool  # Per pubblicare il tempo di percorrenza
 import time
-from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 # File esterni 
 from script_python.turtle_estimate_position import publish_initial_pose
 from script_python.patient_button_control import button
@@ -16,16 +15,6 @@ class GoalNavigation(Node):
         
         # Crea un ActionClient per inviare la destinazione
         self._action_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
-
-        # Configura il QoS con History e Depth
-        qos_profile = QoSProfile(
-            history=QoSHistoryPolicy.KEEP_LAST,  # Mantieni solo gli ultimi messaggi
-            depth=10,  # Profondità massima della coda
-            reliability=QoSReliabilityPolicy.RELIABLE  # Compatibile con AMCL
-        )
-
-        # Crea un publisher per pubblicare la posizione iniziale
-        self.initial_pose_publisher = self.create_publisher(PoseWithCovarianceStamped, '/initialpose', qos_profile)
 
         # Crea un publisher per pubblicare lo stato di avanzamento
         self.move_status_publisher = self.create_publisher(Bool, '/move_status', 10)
