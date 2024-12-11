@@ -43,6 +43,7 @@ class OdomPositionSubscriber(Node):
             self.distance = 0.0
 
         # Ottieni il tempo attuale
+        current_time = time.time()
         if current_time - self.last_log_time >= 0.95: # Tolleranza di 0.05 per sicurezza
             # Pubblica la distanza
             self.distance_publisher.publish(Float64(data=self.distance))

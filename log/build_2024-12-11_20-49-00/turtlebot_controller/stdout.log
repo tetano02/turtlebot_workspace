@@ -1,0 +1,61 @@
+running egg_info
+writing ../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying script_python/__init__.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/move_turtle.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/patient_button_control.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/turtle_estimate_position.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/turtle_csv_handler.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/elaborate_data.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/move_turtle_AB.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+copying script_python/turtle_distance_publisher.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+running install
+running install_lib
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/__init__.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/move_turtle.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/patient_button_control.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/turtle_estimate_position.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/turtle_csv_handler.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/elaborate_data.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/move_turtle_AB.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/turtle_distance_publisher.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/move_turtle.py to move_turtle.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/patient_button_control.py to patient_button_control.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_estimate_position.py to turtle_estimate_position.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_csv_handler.py to turtle_csv_handler.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/elaborate_data.py to elaborate_data.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/move_turtle_AB.py to move_turtle_AB.cpython-310.pyc
+byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_distance_publisher.py to turtle_distance_publisher.cpython-310.pyc
+running install_data
+copying resource/turtlebot_controller -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller
+copying params/nav2_multirobot_params_2.yaml -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+copying params/nav2_params.yaml -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+copying params/nav2_multirobot_params_all.yaml -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+copying params/nav2_multirobot_params_1.yaml -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+copying urdf/turtlebot3_waffle.urdf -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/urdf
+copying worlds/waffle.model -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+copying worlds/world_only.model -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+copying worlds/world_planimetria.model -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+copying rviz/nav2_default_view.rviz -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz
+copying rviz/nav2_namespaced_view.rviz -> /home/ste/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz
+running install_egg_info
+removing '/home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing move_turtle script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing move_turtle_AB script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_csv_handler script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_distance_publisher script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_move_status_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_position_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_velocity_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+writing list of installed files to '/home/ste/turtlebot_workspace/build/turtlebot_controller/install.log'
