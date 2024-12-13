@@ -71,7 +71,11 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    ```
 
 ---
-
+Per consentire il corretto avviamento, avviare il progetto di base
+```bash
+   ros2 launch nav2_bringup tb3_simulation_launch.py
+   ```
+In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
 ## Importazione del progetto
 1. Clonare la repository GitHub:
    ```bash
