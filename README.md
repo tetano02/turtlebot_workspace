@@ -125,11 +125,38 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
 - `turtle_csv_handler`: Salva i dati di navigazione in formato CSV.
 
 ---
-
+## Avvio dei nodi
+Per avviare i nodi seguire i seguenti comandi
+1. Eseguire il build del workspace:
+   ```bash
+   cd turtlebot_workspace
+   colcon build
+   source install/setup.bash
+   ```
+2. Avvia i nodi aprendo ogni volta una nuova scheda da terminale:
+   Nodo che pubblica la distanza:
+   ```bash
+   ros2 run turtlebot_controller turtle_distance_publisher
+   ```
+   Nodo che crea i csv:
+   ```bash
+   ros2 run turtlebot_controller turtle_csv_handler
+   ```
+   Nodo che permette al robot di muoversi:
+   ```bash
+   ros2 run turtlebot_controller move_turtle_AB
+   ```
+---
+## Visualizzazione dei dati
+Dopo aver eseguito il lancio della simulazione e i nodi, per visualizzare i dati della simulazione è necessario eseguire i seguenti comandi.
+```bash
+```
+   cd ~/turtlebot_workspace/src/turtlebot_controller/script_python
+   python3 elaborate_data.py
+---
 ## Configurazione della mappa
 1. Convertire la planimetria in formato `.pgm` e `.yaml`.
 2. Configurare Gazebo con i file di riferimento e aggiungere i modelli scaricati.
-
 ---
 
 ## Fasi della simulazione
