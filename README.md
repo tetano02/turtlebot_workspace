@@ -86,7 +86,11 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
    sudo mkdir /opt/ros/humble/share/turtlebot3_gazebo/models/planimetria_santanna
    sudo cp -r ~/turtlebot_workspace/src/turtlebot_controller/models/planimetria_santanna/* /opt/ros/humble/share/turtlebot3_gazebo/models/planimetria_santanna
    ```
-
+3. Sostituire il file delle texture Gazebo:
+   ```bash
+   sudo rm /usr/share/gazebo-11/media/materials/scripts/gazebo.material
+   sudo cp ~/turtlebot_workspace/src/turtlebot_controller/gazebo.material /usr/share/gazebo-11/media/materials/scripts/
+   ```
 ---
 
 ## Avvio della simulazione
@@ -142,6 +146,6 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
 
 ## Contatti
 Per informazioni o segnalazioni di problemi, contattare il team di sviluppo: 
-- [Stefano Agnelli](s.agnelli004@studenti.unibs.it)
-- [Michele Giovanelli](m.giovanelli004@studenti.unibs.it)
-- [Wen Wen Sun](w.sun002@studenti.unibs.it)
+- [Stefano Agnelli](https://github.com/tetano02)
+- [Michele Giovanelli]()
+- [Wen Wen Sun]()
