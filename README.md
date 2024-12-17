@@ -150,9 +150,9 @@ Per avviare i nodi seguire i seguenti comandi
 ## Visualizzazione dei dati
 Dopo aver eseguito il lancio della simulazione e i nodi, per visualizzare i dati della simulazione è necessario eseguire i seguenti comandi.
 ```bash
-```
    cd ~/turtlebot_workspace/src/turtlebot_controller/script_python
    python3 elaborate_data.py
+```
 ---
 ## Configurazione della mappa
 1. Convertire la planimetria in formato `.pgm` e `.yaml`.
