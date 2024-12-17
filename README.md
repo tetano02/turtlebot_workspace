@@ -15,7 +15,9 @@ Questo progetto implementa un sistema di navigazione autonoma utilizzando ROS2 e
 10. [Sviluppi futuri](#sviluppi-futuri)
 
 ---
-
+## Visualizzazione comandi da eseguire
+![alt text](https://drive.google.com/file/d/1NVRA5yLK-R8OnnlejJIPpdDIbuDzupk5/view?usp=sharing)
+---
 ## Introduzione
 Il progetto combina robotica e supporto alla mobilità per assistere pazienti in un contesto riabilitativo. Include la configurazione di ROS2, Nav2, RViz, e Gazebo per la simulazione del TurtleBot.
 
