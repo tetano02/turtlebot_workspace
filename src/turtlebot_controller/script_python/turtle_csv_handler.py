@@ -122,7 +122,7 @@ class DataLoggerNode(Node):
         # Ottieni la data corrente nel formato YYYYMMDD
         date_str = datetime.now().strftime('%Y%m%d')
         # Percorso della cartella dove salvare i file
-        folder_path = '~/my_ros2_ws/src/turtlebot_controller/robot_data_csv'
+        folder_path = '~/turtlebot_workspace/src/turtlebot_controller/robot_data_csv'
         # Espandi il percorso della cartella
         folder_path = os.path.expanduser(folder_path)
         
