@@ -48,18 +48,39 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
 ### Installazione di ROS2
 1. Configurare UTF-8:
    ```bash
+   locale  # check for UTF-8
+   
+   sudo apt update && sudo apt install locales
    sudo locale-gen en_US en_US.UTF-8
    sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+   export LANG=en_US.UTF-8
+   
+   locale  # verify settings
    ```
-2. Aggiungere i repository e installare ROS2:
+2. Assicurati che Ubuntu Universal Repository sia attivata
    ```bash
-   sudo apt install curl -y
-   sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-   echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list
-   sudo apt update
-   sudo apt install ros-humble-desktop ros-dev-tools
+   sudo apt install software-properties-common
+   sudo add-apt-repository universe
    ```
-
+3. Aggiungi la chiave GPG di Ros2
+   ```bash
+   sudo apt update && sudo apt install curl -y
+   sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+   ```
+4. Aggiungi la repository alla lista sorgente:
+   ```bash
+  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+   ```
+5. Prima di avviare l'installazione, check di tutti i pacchetti:
+   ```bash
+   sudo apt update
+   sudo apt upgrade
+   ```
+6. Installazione di ROS2 e di pacchetti aggiuntivi:
+   ```bash
+   sudo apt install ros-humble-desktop
+   sudo apt install ros-dev-tools
+   ```
 ---
 
 ## Installazione dei pacchetti necessari
