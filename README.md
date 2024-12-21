@@ -83,7 +83,7 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    ```
 ---
 
-## Installazione dei pacchetti necessari
+## Installazione dei pacchetti necessari Nav2
 1. Installare i pacchetti Nav2:
    ```bash
    sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
@@ -92,8 +92,12 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    ```bash
    sudo apt install ros-humble-turtlebot3-gazebo
    ```
-Per consentire il corretto avviamento, avviare il progetto di base
+Per consentire il corretto avviamento, avviare il progetto di base per sicurezza
 ```bash
+   source /opt/ros/humble/setup.bash
+   export TURTLEBOT3_MODEL=waffle
+   export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+   source /usr/share/gazebo/setup.bash
    ros2 launch nav2_bringup tb3_simulation_launch.py
    ```
 In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
@@ -114,6 +118,11 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
    sudo rm /usr/share/gazebo-11/media/materials/scripts/gazebo.material
    sudo cp ~/turtlebot_workspace/src/turtlebot_controller/gazebo.material /usr/share/gazebo-11/media/materials/scripts/
    ```
+4. Per il corretto funzionamento del progetto, eseguire anche i seguenti comandi
+   ```bash
+   pip install pandas
+   pip upgrade matplotlib
+   ```
 ---
 
 ## Avvio della simulazione
@@ -123,17 +132,20 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
    export TURTLEBOT3_MODEL=waffle
    export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
    ```
-2. Buildare il workspace:
+   Se non dovesse funzionare, aggiungere anche questo comando
+   ```bash
+   source /usr/share/gazebo/setup.bash
+   ```
+3. Buildare il workspace:
    ```bash
    cd turtlebot_workspace
    colcon build
    source install/setup.bash
    ```
-3. Avviare la simulazione:
+4. Avviare la simulazione:
    ```bash
    ros2 launch turtlebot_controller tb3_santanna_launch.py
    ```
-
 ---
 
 ## Struttura dei nodi
@@ -148,22 +160,26 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
 ---
 ## Avvio dei nodi
 Per avviare i nodi seguire i seguenti comandi
-1. Eseguire il build del workspace:
+1. Apri una nuova scheda da terminale.
+2. Eseguire il build del workspace:
    ```bash
    cd turtlebot_workspace
    colcon build
    source install/setup.bash
    ```
-2. Avvia i nodi aprendo ogni volta una nuova scheda da terminale:
+3. Avvia il nodo che pubblica la distanza:
    Nodo che pubblica la distanza:
    ```bash
    ros2 run turtlebot_controller turtle_distance_publisher
    ```
+4. Esegui di nuovo i punti 1 e 2
+5. Avvia il nodo che crea i csv con i dati del robot:
    Nodo che crea i csv:
    ```bash
    ros2 run turtlebot_controller turtle_csv_handler
    ```
-   Nodo che permette al robot di muoversi:
+6. Esegui di nuovo i punti 1 e 2
+7. Nodo che permette al robot di muoversi:
    ```bash
    ros2 run turtlebot_controller move_turtle_AB
    ```
@@ -176,26 +192,22 @@ Dopo aver eseguito il lancio della simulazione e i nodi, per visualizzare i dati
 ```
 ---
 ## Configurazione della mappa
-1. Convertire la planimetria in formato `.pgm` e `.yaml`.
-2. Configurare Gazebo con i file di riferimento e aggiungere i modelli scaricati.
+1. La planimetria è stata convertita in formato `.pgm` e i parametri settati nel file `.yaml`.
+2. Gazebo è stato configurato con i file di riferimento e aggiungendo i modelli scaricati.
 ---
-
 ## Fasi della simulazione
 1. **Movimento verso la destinazione**: Il robot si muove verso il letto, salvando i dati.
 2. **Ritorno alla base**: Premendo un bottone simulato, il robot torna alla posizione iniziale.
-
 ---
-
 ## Sviluppi futuri
 - Implementazione su hardware reale con:
   - Configurazione del deambulatore.
   - Test in ambienti ospedalieri reali.
 - Miglioramenti all'interfaccia utente e all'affidabilità del sistema di navigazione.
-
 ---
 
-## Contatti
+## Autori e contatti 
 Per informazioni o segnalazioni di problemi, contattare il team di sviluppo: 
 - [Stefano Agnelli](https://github.com/tetano02)
 - [Michele Giovanelli]()
-- [Wen Wen Sun]()
+- [Wen Wen Sun](https://github.com/sunwenwen2002)
