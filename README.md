@@ -81,6 +81,11 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    sudo apt install ros-humble-desktop
    sudo apt install ros-dev-tools
    ```
+7. Esegui questo comando per configurare l’ambiente ROS 2 nella tua shell
+corrente
+   ```bash
+   source /opt/ros/humble/setup.bash
+   ```
 ---
 
 ## Installazione dei pacchetti necessari Nav2
