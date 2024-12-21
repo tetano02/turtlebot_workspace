@@ -69,7 +69,7 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    ```
 4. Aggiungi la repository alla lista sorgente:
    ```bash
-  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee     /etc/apt/sources.list.d/ros2.list > /dev/null
+  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
    ```
 5. Prima di avviare l'installazione, check di tutti i pacchetti:
    ```bash
