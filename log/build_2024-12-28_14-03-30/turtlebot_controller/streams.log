@@ -1,0 +1,30 @@
+[0.486s] Invoking command in '/home/ste/turtlebot_workspace/src/turtlebot_controller': PYTHONPATH=/home/ste/turtlebot_workspace/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/ste/turtlebot_workspace/build/turtlebot_controller/build install --record /home/ste/turtlebot_workspace/build/turtlebot_controller/install.log --single-version-externally-managed install_data
+[0.634s] running egg_info
+[0.634s] writing ../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+[0.636s] writing dependency_links to ../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+[0.636s] writing entry points to ../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+[0.637s] writing requirements to ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+[0.637s] writing top-level names to ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+[0.638s] reading manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[0.640s] writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[0.640s] running build
+[0.640s] running build_py
+[0.641s] copying script_python/turtle_csv_handler.py -> /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python
+[0.642s] running install
+[0.642s] running install_lib
+[0.643s] copying /home/ste/turtlebot_workspace/build/turtlebot_controller/build/lib/script_python/turtle_csv_handler.py -> /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python
+[0.645s] byte-compiling /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_csv_handler.py to turtle_csv_handler.cpython-310.pyc
+[0.646s] running install_data
+[0.650s] running install_egg_info
+[0.651s] removing '/home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.651s] Copying ../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+[0.652s] running install_scripts
+[0.665s] Installing move_turtle script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing move_turtle_AB script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing turtle_csv_handler script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing turtle_distance_publisher script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing turtle_move_status_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing turtle_position_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.666s] Installing turtle_velocity_data script to /home/ste/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[0.667s] writing list of installed files to '/home/ste/turtlebot_workspace/build/turtlebot_controller/install.log'
+[0.682s] Invoked command in '/home/ste/turtlebot_workspace/src/turtlebot_controller' returned '0': PYTHONPATH=/home/ste/turtlebot_workspace/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ste/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/ste/turtlebot_workspace/build/turtlebot_controller/build install --record /home/ste/turtlebot_workspace/build/turtlebot_controller/install.log --single-version-externally-managed install_data

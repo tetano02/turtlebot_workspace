@@ -16,9 +16,9 @@ def seleziona_file():
         last_home_file = max([f for f in files if 'home' in f])
         return last_goal_file, last_home_file
     elif scelta == 'B':
-        data_run = input("Inserisci data (YYYYMMDD) e numero della run (es. 01): ")
-        goal_file = os.path.join(data_folder, f"{data_run}_run_goal.csv")
-        home_file = os.path.join(data_folder, f"{data_run}_run_home.csv")
+        data_run = input("Inserisci la corsa che vuoi visualizzare (YYYYMMDD_00run): ")
+        goal_file = os.path.join(data_folder, f"{data_run}_goal.csv")
+        home_file = os.path.join(data_folder, f"{data_run}_home.csv")
         if os.path.exists(goal_file) and os.path.exists(home_file):
             return goal_file, home_file
         else:
