@@ -128,6 +128,10 @@ In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
    pip install pandas
    pip upgrade matplotlib
    ```
+   Se l'ultimo comando non dovesse funzionare, usare il seguente comando.
+   ```bash
+   pip install --upgrade matplotlib
+   ```
 ---
 
 ## Avvio della simulazione
