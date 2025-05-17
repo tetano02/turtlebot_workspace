@@ -1,7 +1,10 @@
 # TurtleBot Navigation System
 
 Questo progetto implementa un sistema di navigazione autonoma utilizzando ROS2 e Nav2. Il robot TurtleBot è configurato per muoversi in un ambiente simulato (e potenzialmente reale) seguendo obiettivi specifici e salvando i dati di navigazione per l'analisi.
+## Simulazione
+[Guarda il video demo](robot_simulation.mp4)
 
+---
 ## Indice
 1. [Introduzione](#introduzione)
 2. [Prerequisiti](#prerequisiti)
