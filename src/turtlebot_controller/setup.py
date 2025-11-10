@@ -33,7 +33,8 @@ setup(
             'turtle_csv_handler = script_python.turtle_csv_handler:main',
             'turtle_move_status_data = script_python.turtle_data.turtle_move_status_data:main',
             'turtle_position_data = script_python.turtle_data.turtle_position_data:main',
-            'turtle_velocity_data = script_python.turtle_data.turtle_velocity_data:main'
+            'turtle_velocity_data = script_python.turtle_data.turtle_velocity_data:main',
+            'voice_interface = script_python.voice_interface:main',
     		],
 	},
 

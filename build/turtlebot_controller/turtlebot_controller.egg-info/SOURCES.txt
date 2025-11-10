@@ -8,7 +8,6 @@ setup.py
 ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
 ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
 ../../build/turtlebot_controller/turtlebot_controller.egg-info/zip-safe
-launch/tb3_santanna_launch.py
 maps/planimetria_stanza.pgm
 maps/planimetria_stanza.yaml
 maps/planimetria_stanza_rotated.pgm
@@ -29,9 +28,14 @@ script_python/patient_button_control.py
 script_python/turtle_csv_handler.py
 script_python/turtle_distance_publisher.py
 script_python/turtle_estimate_position.py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
+script_python/voice_interface.py
+turtlebot_controller.egg-info/PKG-INFO
+turtlebot_controller.egg-info/SOURCES.txt
+turtlebot_controller.egg-info/dependency_links.txt
+turtlebot_controller.egg-info/entry_points.txt
+turtlebot_controller.egg-info/requires.txt
+turtlebot_controller.egg-info/top_level.txt
+turtlebot_controller.egg-info/zip-safe
 urdf/turtlebot3_waffle.urdf
 worlds/waffle.model
 worlds/world_only.model

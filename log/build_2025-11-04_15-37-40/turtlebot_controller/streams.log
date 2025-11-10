@@ -1,0 +1,40 @@
+[1.113s] Invoking command in '/home/leo/turtlebot_workspace/build/turtlebot_controller': PYTHONPATH=/home/leo/turtlebot_workspace/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leo/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leo/turtlebot_workspace/build/turtlebot_controller/build --no-deps symlink_data --force
+[1.535s] running develop
+[1.798s] running egg_info
+[1.798s] writing turtlebot_controller.egg-info/PKG-INFO
+[1.799s] writing dependency_links to turtlebot_controller.egg-info/dependency_links.txt
+[1.799s] writing entry points to turtlebot_controller.egg-info/entry_points.txt
+[1.800s] writing requirements to turtlebot_controller.egg-info/requires.txt
+[1.800s] writing top-level names to turtlebot_controller.egg-info/top_level.txt
+[1.804s] reading manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+[1.805s] writing manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+[1.807s] running build_ext
+[1.807s] Creating /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot-controller.egg-link (link to .)
+[1.809s] Installing move_turtle script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.809s] Installing move_turtle_AB script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.809s] Installing turtle_csv_handler script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.810s] Installing turtle_distance_publisher script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.810s] Installing turtle_move_status_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.811s] Installing turtle_position_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.811s] Installing turtle_velocity_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+[1.811s] 
+[1.811s] Installed /home/leo/turtlebot_workspace/build/turtlebot_controller
+[1.812s] running symlink_data
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/resource/turtlebot_controller -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/ament_index/resource_index/packages
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/package.xml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza_rotated.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/turtlebot3_world.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+[1.812s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/turtlebot3_world.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_all.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_1.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_2.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_params.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+[1.813s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/urdf/turtlebot3_waffle.urdf -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/urdf
+[1.814s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/waffle.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+[1.814s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/world_planimetria.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+[1.814s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/world_only.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+[1.814s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/rviz/nav2_namespaced_view.rviz -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz
+[1.814s] symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/rviz/nav2_default_view.rviz -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz
+[1.867s] Invoked command in '/home/leo/turtlebot_workspace/build/turtlebot_controller' returned '0': PYTHONPATH=/home/leo/turtlebot_workspace/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leo/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leo/turtlebot_workspace/build/turtlebot_controller/build --no-deps symlink_data --force

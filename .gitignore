@@ -1,0 +1,9 @@
+# Cartelle di build e log di ROS
+build/
+devel/
+install/
+logs/
+
+# File temporanei
+*.pyc
+*~

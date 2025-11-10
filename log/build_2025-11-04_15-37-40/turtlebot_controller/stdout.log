@@ -1,0 +1,38 @@
+running develop
+running egg_info
+writing turtlebot_controller.egg-info/PKG-INFO
+writing dependency_links to turtlebot_controller.egg-info/dependency_links.txt
+writing entry points to turtlebot_controller.egg-info/entry_points.txt
+writing requirements to turtlebot_controller.egg-info/requires.txt
+writing top-level names to turtlebot_controller.egg-info/top_level.txt
+reading manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot-controller.egg-link (link to .)
+Installing move_turtle script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing move_turtle_AB script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_csv_handler script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_distance_publisher script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_move_status_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_position_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+Installing turtle_velocity_data script to /home/leo/turtlebot_workspace/install/turtlebot_controller/lib/turtlebot_controller
+
+Installed /home/leo/turtlebot_workspace/build/turtlebot_controller
+running symlink_data
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/resource/turtlebot_controller -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/ament_index/resource_index/packages
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/package.xml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza_rotated.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/turtlebot3_world.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/turtlebot3_world.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/maps/planimetria_stanza.pgm -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/maps
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_all.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_1.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_multirobot_params_2.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/params/nav2_params.yaml -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/params
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/urdf/turtlebot3_waffle.urdf -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/urdf
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/waffle.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/world_planimetria.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/worlds/world_only.model -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/worlds
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/rviz/nav2_namespaced_view.rviz -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz
+symbolically linking /home/leo/turtlebot_workspace/build/turtlebot_controller/rviz/nav2_default_view.rviz -> /home/leo/turtlebot_workspace/install/turtlebot_controller/share/turtlebot_controller/rviz

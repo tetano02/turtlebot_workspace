@@ -1,0 +1,513 @@
+[INFO] [launch]: All log files can be found below /home/leo/.ros/log/2025-11-10-09-54-58-589088-leo-Lenovo-2657
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [2671]
+[INFO] [gzclient-2]: process started with pid [2673]
+[INFO] [spawn_entity.py-3]: process started with pid [2675]
+[INFO] [robot_state_publisher-4]: process started with pid [2677]
+[INFO] [rviz2-5]: process started with pid [2679]
+[INFO] [component_container_isolated-6]: process started with pid [2681]
+[component_container_isolated-6] [INFO] [1762764899.773203395] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[robot_state_publisher-4] [INFO] [1762764899.808687764] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-4] [INFO] [1762764899.808846975] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-4] [INFO] [1762764899.808867723] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-4] [INFO] [1762764899.808882039] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-4] [INFO] [1762764899.808895724] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-4] [INFO] [1762764899.808909562] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-4] [INFO] [1762764899.808923032] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-4] [INFO] [1762764899.808936474] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-4] [INFO] [1762764899.808949904] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-4] [INFO] [1762764899.808963429] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-4] [INFO] [1762764899.808976856] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-4] [INFO] [1762764899.808990344] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-4] [INFO] [1762764899.809003738] [robot_state_publisher]: got segment wheel_right_link
+[component_container_isolated-6] [INFO] [1762764899.896468925] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-6] [INFO] [1762764899.896531422] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-6] [INFO] [1762764899.896553096] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-6] [INFO] [1762764899.896570675] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-6] [INFO] [1762764899.915287608] [map_server]: 
+[component_container_isolated-6] 	map_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764899.916590234] [map_server]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764899.918002011] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-6] [INFO] [1762764899.957581432] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-6] [INFO] [1762764899.957634584] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-6] [INFO] [1762764899.968010750] [controller_server]: 
+[component_container_isolated-6] 	controller_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.028046014] [controller_server]: Creating controller server
+[component_container_isolated-6] [INFO] [1762764900.062201335] [local_costmap.local_costmap]: 
+[component_container_isolated-6] 	local_costmap lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.071259477] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.082878934] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-6] [INFO] [1762764900.105970378] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-6] [INFO] [1762764900.106026282] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-6] [INFO] [1762764900.119103882] [amcl]: 
+[component_container_isolated-6] 	amcl lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.122185081] [amcl]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.126067070] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[component_container_isolated-6] [INFO] [1762764900.139055110] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-6] [INFO] [1762764900.139109834] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-6] [INFO] [1762764900.150193225] [smoother_server]: 
+[component_container_isolated-6] 	smoother_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.152647255] [smoother_server]: Creating smoother server
+[component_container_isolated-6] [INFO] [1762764900.154701956] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.163702099] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1762764900.163766518] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1762764900.184659597] [lifecycle_manager_localization]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.200938802] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.203883883] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-6] [INFO] [1762764900.210041608] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.210113076] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.210373141] [map_server]: Configuring
+[component_container_isolated-6] [INFO] [1762764900.210436425] [map_io]: Loading yaml file: /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/maps/planimetria_stanza.yaml
+[component_container_isolated-6] [INFO] [1762764900.212573080] [map_io]: resolution: 0.007577
+[component_container_isolated-6] [INFO] [1762764900.212605316] [map_io]: origin[0]: -3.61
+[component_container_isolated-6] [INFO] [1762764900.212616164] [map_io]: origin[1]: -7.1
+[component_container_isolated-6] [INFO] [1762764900.212625777] [map_io]: origin[2]: 0
+[component_container_isolated-6] [INFO] [1762764900.212635580] [map_io]: free_thresh: 0.196
+[component_container_isolated-6] [INFO] [1762764900.212645131] [map_io]: occupied_thresh: 0.7
+[component_container_isolated-6] [INFO] [1762764900.212655447] [map_io]: mode: trinary
+[component_container_isolated-6] [INFO] [1762764900.212665540] [map_io]: negate: 1
+[component_container_isolated-6] [INFO] [1762764900.214406537] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-6] [INFO] [1762764900.214459491] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-6] [INFO] [1762764900.227824128] [map_io]: Loading image_file: /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/maps/planimetria_stanza_rotated.pgm
+[component_container_isolated-6] [INFO] [1762764900.243796533] [planner_server]: 
+[component_container_isolated-6] 	planner_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.246545897] [planner_server]: Creating
+[component_container_isolated-6] [INFO] [1762764900.263572581] [global_costmap.global_costmap]: 
+[component_container_isolated-6] 	global_costmap lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.264256254] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.273315801] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-6] [INFO] [1762764900.324803435] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-6] [INFO] [1762764900.324877196] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-6] [INFO] [1762764900.347290582] [behavior_server]: 
+[component_container_isolated-6] 	behavior_server lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.363511778] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-6] [INFO] [1762764900.388689092] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-6] [INFO] [1762764900.388745994] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-6] [INFO] [1762764900.409027573] [bt_navigator]: 
+[component_container_isolated-6] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.409101120] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.416230615] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-6] [INFO] [1762764900.436662725] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-6] [INFO] [1762764900.436722115] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-6] [INFO] [1762764900.458618282] [waypoint_follower]: 
+[component_container_isolated-6] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-6] [INFO] [1762764900.463236077] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.467921807] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-6] [INFO] [1762764900.478490272] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-6] [INFO] [1762764900.478544625] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-6] [INFO] [1762764900.515454850] [velocity_smoother]: 
+[component_container_isolated-6] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.519023373] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1762764900.519583301] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-6] [INFO] [1762764900.556621745] [lifecycle_manager_navigation]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-6] [INFO] [1762764900.563564332] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.590758585] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.591377924] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.591957199] [controller_server]: Configuring controller interface
+[component_container_isolated-6] [INFO] [1762764900.593084586] [controller_server]: getting goal checker plugins..
+[component_container_isolated-6] [INFO] [1762764900.594213120] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-6] [INFO] [1762764900.594284268] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1762764900.609281745] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-6] [INFO] [1762764900.657921932] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-6] [INFO] [1762764900.665882533] [map_io]: Read map /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/maps/planimetria_stanza_rotated.pgm: 858 X 1918 map @ 0.007577 m/cell
+[component_container_isolated-6] [INFO] [1762764900.684229142] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.685491876] [amcl]: Configuring
+[component_container_isolated-6] [INFO] [1762764900.685602332] [amcl]: initTransforms
+[component_container_isolated-6] [INFO] [1762764900.701177476] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-6] [INFO] [1762764900.701224339] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1762764900.703016772] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1762764900.714842878] [amcl]: initPubSub
+[component_container_isolated-6] [INFO] [1762764900.726540038] [amcl]: Subscribed to map topic.
+[component_container_isolated-6] [INFO] [1762764900.733462203] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-6] [INFO] [1762764900.738027246] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-6] [INFO] [1762764900.739035835] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[component_container_isolated-6] [INFO] [1762764900.759029745] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.759170776] [map_server]: Activating
+[component_container_isolated-6] [INFO] [1762764900.763108521] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764900.763109329] [amcl]: Received a 858 X 1918 map @ 0.008 m/pix
+[component_container_isolated-6] [INFO] [1762764900.774102927] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[component_container_isolated-6] [INFO] [1762764900.778499215] [controller_server]: Setting transform_tolerance to 0.200000
+[rviz2-5] [INFO] [1762764900.791932419] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1762764900.792058266] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[component_container_isolated-6] [INFO] [1762764900.837286557] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[component_container_isolated-6] [INFO] [1762764900.841967210] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.842891275] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[component_container_isolated-6] [INFO] [1762764900.853577386] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.854308833] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[component_container_isolated-6] [INFO] [1762764900.854828207] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.855002399] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[component_container_isolated-6] [INFO] [1762764900.857521919] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.858048148] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[component_container_isolated-6] [INFO] [1762764900.862989618] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.863192147] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[component_container_isolated-6] [INFO] [1762764900.867238706] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.868209961] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[component_container_isolated-6] [INFO] [1762764900.873022029] [controller_server]: Critic plugin initialized
+[component_container_isolated-6] [INFO] [1762764900.873285509] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-6] [INFO] [1762764900.877848839] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-6] [INFO] [1762764900.877890496] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.878050209] [amcl]: Activating
+[component_container_isolated-6] [INFO] [1762764900.878088021] [amcl]: Creating bond (amcl) to lifecycle manager.
+[rviz2-5] [INFO] [1762764900.899583918] [rviz2]: Stereo is NOT SUPPORTED
+[component_container_isolated-6] [INFO] [1762764900.916327629] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.916486346] [smoother_server]: Configuring smoother server
+[component_container_isolated-6] [INFO] [1762764900.934881655] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-6] [INFO] [1762764900.942542039] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-6] [INFO] [1762764900.954867313] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.955007322] [planner_server]: Configuring
+[component_container_isolated-6] [INFO] [1762764900.955052396] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-6] [INFO] [1762764900.964673617] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-6] [INFO] [1762764900.968197608] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-6] [INFO] [1762764900.969101535] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-6] [INFO] [1762764900.969134114] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-6] [INFO] [1762764900.971954468] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-6] [INFO] [1762764900.979361356] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-6] [INFO] [1762764900.979410907] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1762764900.983018983] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-6] [INFO] [1762764900.994119337] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 858 X 1918 at 0.007577 m/pix
+[component_container_isolated-6] [INFO] [1762764900.998568987] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-6] [INFO] [1762764900.998617252] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-6] [INFO] [1762764900.998649043] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[spawn_entity.py-3] [INFO] [1762764900.998609680] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1762764900.999350337] [spawn_entity]: Loading entity XML from file /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/worlds/waffle.model
+[component_container_isolated-6] [INFO] [1762764901.000122729] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-6] [INFO] [1762764901.000573098] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[spawn_entity.py-3] [INFO] [1762764901.004730768] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1762764901.005354762] [spawn_entity]: Waiting for service /spawn_entity
+[component_container_isolated-6] [INFO] [1762764901.010915730] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-6] [INFO] [1762764901.031227824] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764901.032251186] [behavior_server]: Configuring
+[component_container_isolated-6] [INFO] [1762764901.044197691] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-6] [INFO] [1762764901.048790973] [behavior_server]: Configuring spin
+[component_container_isolated-6] [INFO] [1762764901.064069384] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-6] [INFO] [1762764901.068626573] [behavior_server]: Configuring backup
+[component_container_isolated-6] [INFO] [1762764901.082733426] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-6] [INFO] [1762764901.086094169] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-6] [INFO] [1762764901.094821651] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[component_container_isolated-6] [INFO] [1762764901.104955660] [behavior_server]: Configuring assisted_teleop
+[component_container_isolated-6] [INFO] [1762764901.115475692] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-6] [INFO] [1762764901.118508444] [behavior_server]: Configuring wait
+[component_container_isolated-6] [INFO] [1762764901.125704907] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-6] [INFO] [1762764901.125887302] [bt_navigator]: Configuring
+[component_container_isolated-6] [WARN] [1762764901.223396555] [amcl]: New subscription discovered on topic '/particle_cloud', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[rviz2-5] [INFO] [1762764901.449559694] [rviz2]: Trying to create a map of size 858 x 1918 using 1 swatches
+[rviz2-5] [ERROR] [1762764901.467022117] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-5] active samplers with a different type refer to the same texture image unit
+[component_container_isolated-6] [INFO] [1762764901.492361461] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-6] [INFO] [1762764901.492558487] [waypoint_follower]: Configuring
+[component_container_isolated-6] [INFO] [1762764901.518344913] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-6] [INFO] [1762764901.520990690] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1762764901.521192496] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-6] [INFO] [1762764901.534691924] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764901.536924046] [controller_server]: Activating
+[component_container_isolated-6] [INFO] [1762764901.536986002] [local_costmap.local_costmap]: Activating
+[component_container_isolated-6] [INFO] [1762764901.537010058] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-6] [INFO] [1762764901.537042339] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764902.037099851] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764902.537119534] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764903.037113311] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764903.537098377] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764904.037231693] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764904.537131587] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[spawn_entity.py-3] [INFO] [1762764904.559480882] [spawn_entity]: Calling service /spawn_entity
+[component_container_isolated-6] [INFO] [1762764905.037106357] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764905.537118327] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764906.037324151] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764906.537102397] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764907.037102104] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[spawn_entity.py-3] [INFO] [1762764907.264593164] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [turtlebot3_waffle]
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 2675]
+[gzserver-1] [INFO] [1762764907.534438639] [intel_realsense_r200_depth_driver]: Publishing camera info to [/intel_realsense_r200_depth/camera_info]
+[gzserver-1] [INFO] [1762764907.536685625] [intel_realsense_r200_depth_driver]: Publishing depth camera info to [/intel_realsense_r200_depth/depth/camera_info]
+[component_container_isolated-6] [INFO] [1762764907.537098552] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gzserver-1] [INFO] [1762764907.537803576] [intel_realsense_r200_depth_driver]: Publishing pointcloud to [/intel_realsense_r200_depth/points]
+[gzserver-1] [INFO] [1762764907.611830143] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-1] [INFO] [1762764907.612087986] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762764907.619018463] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762764907.624071091] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762764907.629999938] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762764907.654203438] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762764907.654256835] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[component_container_isolated-6] [INFO] [1762764907.871267322] [amcl]: createLaserObject
+[component_container_isolated-6] [INFO] [1762764908.038959415] [local_costmap.local_costmap]: start
+[component_container_isolated-6] [INFO] [1762764908.242172849] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764908.366674159] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-6] [INFO] [1762764908.366738623] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764908.367035918] [smoother_server]: Activating
+[component_container_isolated-6] [INFO] [1762764908.367087020] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764908.475309222] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-6] [INFO] [1762764908.475355062] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764908.475589693] [planner_server]: Activating
+[component_container_isolated-6] [INFO] [1762764908.475639614] [global_costmap.global_costmap]: Activating
+[component_container_isolated-6] [INFO] [1762764908.475654043] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-6] [INFO] [1762764908.475668179] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764908.975737959] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764909.479869564] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-6] [INFO] [1762764909.988965476] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764910.296092673] [rviz]: Message Filter dropping message: frame 'odom' at time 0.511 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764910.454574764] [rviz]: Message Filter dropping message: frame 'odom' at time 0.647 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764910.484875998] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764910.688518004] [rviz]: Message Filter dropping message: frame 'odom' at time 0.749 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764910.874027708] [rviz]: Message Filter dropping message: frame 'odom' at time 0.851 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764910.979274752] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764911.062303766] [rviz]: Message Filter dropping message: frame 'odom' at time 0.953 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764911.254652124] [rviz]: Message Filter dropping message: frame 'odom' at time 0.987 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764911.446596964] [rviz]: Message Filter dropping message: frame 'odom' at time 1.055 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764911.480096217] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764911.672350512] [rviz]: Message Filter dropping message: frame 'odom' at time 1.157 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764911.868085594] [rviz]: Message Filter dropping message: frame 'odom' at time 1.259 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764911.975739599] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764912.054967410] [rviz]: Message Filter dropping message: frame 'odom' at time 1.327 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764912.122163695] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.202 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [WARN] [1762764912.163134331] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-5] [INFO] [1762764912.249120246] [rviz]: Message Filter dropping message: frame 'odom' at time 1.395 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764912.473320403] [rviz]: Message Filter dropping message: frame 'odom' at time 1.497 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764912.475869854] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764912.631167551] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.403 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764912.665068755] [rviz]: Message Filter dropping message: frame 'odom' at time 1.565 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764912.854626883] [rviz]: Message Filter dropping message: frame 'odom' at time 1.633 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764912.918525791] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.603 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764912.975738177] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764913.046915471] [rviz]: Message Filter dropping message: frame 'odom' at time 1.701 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.110797631] [rviz]: Message Filter dropping message: frame 'base_scan' at time 0.805 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.271147370] [rviz]: Message Filter dropping message: frame 'odom' at time 1.803 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.334625256] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1.005 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.463059314] [rviz]: Message Filter dropping message: frame 'odom' at time 1.939 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764913.475734175] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764913.559853039] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1.205 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.655126355] [rviz]: Message Filter dropping message: frame 'odom' at time 2.041 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.815676653] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1.405 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764913.847277803] [rviz]: Message Filter dropping message: frame 'odom' at time 2.075 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764913.975743888] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764914.071021879] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1.606 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.071120810] [rviz]: Message Filter dropping message: frame 'odom' at time 2.177 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.262695170] [rviz]: Message Filter dropping message: frame 'base_scan' at time 1.807 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.262804299] [rviz]: Message Filter dropping message: frame 'odom' at time 2.245 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.455088778] [rviz]: Message Filter dropping message: frame 'base_scan' at time 2.008 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.455183571] [rviz]: Message Filter dropping message: frame 'odom' at time 2.313 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764914.457997624] [amcl]: initialPoseReceived
+[component_container_isolated-6] [WARN] [1762764914.459292599] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1762764912.000000 but the latest data is at time 4.013000, when looking up transform from frame [odom] to frame [base_footprint])
+[component_container_isolated-6] [INFO] [1762764914.459356542] [amcl]: Setting pose (4.000000): -2.500 -2.500 0.000
+[component_container_isolated-6] [INFO] [1762764914.475735383] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5] [INFO] [1762764914.646758816] [rviz]: Message Filter dropping message: frame 'odom' at time 2.415 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.679129377] [rviz]: Message Filter dropping message: frame 'base_scan' at time 2.215 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.870362922] [rviz]: Message Filter dropping message: frame 'base_scan' at time 2.422 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764914.870468019] [rviz]: Message Filter dropping message: frame 'odom' at time 2.551 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764914.975762878] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 4.523000 but the earliest data is at time 5.020000, when looking up transform from frame [base_link] to frame [map]
+[rviz2-5] [INFO] [1762764915.063085288] [rviz]: Message Filter dropping message: frame 'odom' at time 2.755 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.094541684] [rviz]: Message Filter dropping message: frame 'base_scan' at time 2.621 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.254935845] [rviz]: Message Filter dropping message: frame 'odom' at time 2.925 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.286358117] [rviz]: Message Filter dropping message: frame 'base_scan' at time 2.820 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.446309522] [rviz]: Message Filter dropping message: frame 'odom' at time 3.095 for reason 'discarding message because the queue is full'
+[component_container_isolated-6] [INFO] [1762764915.476201018] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 4.999000 but the earliest data is at time 5.020000, when looking up transform from frame [base_link] to frame [map]
+[rviz2-5] [INFO] [1762764915.510423642] [rviz]: Message Filter dropping message: frame 'base_scan' at time 3.020 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.671284651] [rviz]: Message Filter dropping message: frame 'odom' at time 3.299 for reason 'discarding message because the queue is full'
+[rviz2-5] [INFO] [1762764915.673240647] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[component_container_isolated-6] [INFO] [1762764915.975829300] [global_costmap.global_costmap]: start
+[component_container_isolated-6] [INFO] [1762764917.127168351] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1762764917.131060677] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-5] [INFO] [1762764917.181752712] [rviz2]: Trying to create a map of size 858 x 1918 using 1 swatches
+[component_container_isolated-6] [INFO] [1762764917.244313127] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-6] [INFO] [1762764917.244360307] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764917.244892254] [behavior_server]: Activating
+[component_container_isolated-6] [INFO] [1762764917.245050648] [behavior_server]: Activating spin
+[component_container_isolated-6] [INFO] [1762764917.245085622] [behavior_server]: Activating backup
+[component_container_isolated-6] [INFO] [1762764917.245105875] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-6] [INFO] [1762764917.245123299] [behavior_server]: Activating assisted_teleop
+[component_container_isolated-6] [INFO] [1762764917.245140444] [behavior_server]: Activating wait
+[component_container_isolated-6] [INFO] [1762764917.245159518] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764917.362002534] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-6] [INFO] [1762764917.362082243] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-6] [INFO] [1762764917.362657658] [bt_navigator]: Activating
+[component_container_isolated-6] [INFO] [1762764917.628745554] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764917.738778749] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-6] [INFO] [1762764917.738853971] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-6] [INFO] [1762764917.739712089] [waypoint_follower]: Activating
+[component_container_isolated-6] [INFO] [1762764917.739776877] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764917.860639515] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-6] [INFO] [1762764917.860786347] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1762764917.861686943] [velocity_smoother]: Activating
+[component_container_isolated-6] [INFO] [1762764917.861805650] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764917.974516234] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-6] [INFO] [1762764917.974564985] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-6] [INFO] [1762764917.974579041] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[rviz2-5] [INFO] [1762764920.454339302] [rviz]: Message Filter dropping message: frame 'odom' at time 0.600 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764921.101542457] [rviz]: Message Filter dropping message: frame 'odom' at time 1.200 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764921.734089853] [rviz]: Message Filter dropping message: frame 'odom' at time 1.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764922.327676030] [rviz]: Message Filter dropping message: frame 'odom' at time 2.400 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[gzclient-2] 
+[gzclient-2] libcurl: (6) Could not resolve host: fuel.ignitionrobotics.org
+[rviz2-5] [INFO] [1762764923.178019321] [rviz]: Message Filter dropping message: frame 'odom' at time 3.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764923.388679518] [rviz]: Message Filter dropping message: frame 'odom' at time 3.401 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764923.596690953] [rviz]: Message Filter dropping message: frame 'odom' at time 3.605 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764923.812501252] [rviz]: Message Filter dropping message: frame 'odom' at time 3.800 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764923.812599313] [rviz]: Message Filter dropping message: frame 'odom' at time 3.809 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764923.983144968] [rviz]: Message Filter dropping message: frame 'odom' at time 3.979 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.194305183] [rviz]: Message Filter dropping message: frame 'base_scan' at time 3.220 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.196140618] [rviz]: Message Filter dropping message: frame 'odom' at time 4.183 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.411578359] [rviz]: Message Filter dropping message: frame 'base_scan' at time 3.420 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.413170627] [rviz]: Message Filter dropping message: frame 'odom' at time 4.387 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.627003407] [rviz]: Message Filter dropping message: frame 'base_scan' at time 3.620 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.628263383] [rviz]: Message Filter dropping message: frame 'odom' at time 4.500 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.628323119] [rviz]: Message Filter dropping message: frame 'odom' at time 4.591 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.837613982] [rviz]: Message Filter dropping message: frame 'base_scan' at time 3.820 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764924.839157808] [rviz]: Message Filter dropping message: frame 'odom' at time 4.761 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.080644054] [rviz]: Message Filter dropping message: frame 'base_scan' at time 4.020 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.087446724] [rviz]: Message Filter dropping message: frame 'odom' at time 4.965 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.295918180] [rviz]: Message Filter dropping message: frame 'base_scan' at time 4.220 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.500710900] [rviz]: Message Filter dropping message: frame 'base_scan' at time 4.420 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.678898757] [rviz]: Message Filter dropping message: frame 'base_scan' at time 4.620 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[rviz2-5] [INFO] [1762764925.898509197] [rviz]: Message Filter dropping message: frame 'base_scan' at time 4.820 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [gzclient-2]: process has finished cleanly [pid 2673]
+[ERROR] [rviz2-5]: process has died [pid 2679, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/rviz/nav2_default_view.rviz --ros-args'].
+[INFO] [component_container_isolated-6]: sending signal 'SIGINT' to process[component_container_isolated-6]
+[INFO] [robot_state_publisher-4]: sending signal 'SIGINT' to process[robot_state_publisher-4]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[component_container_isolated-6] [INFO] [1762764936.631140749] [rclcpp]: signal_handler(signum=2)
+[component_container_isolated-6] [INFO] [1762764936.631240932] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[component_container_isolated-6] [INFO] [1762764936.631396925] [waypoint_follower]: Deactivating
+[component_container_isolated-6] [INFO] [1762764936.631430344] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[robot_state_publisher-4] [INFO] [1762764936.632800758] [rclcpp]: signal_handler(signum=2)
+[component_container_isolated-6] [INFO] [1762764936.641966786] [waypoint_follower]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764936.708763492] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764936.708809365] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[component_container_isolated-6] [INFO] [1762764936.708858903] [bt_navigator]: Deactivating
+[component_container_isolated-6] [INFO] [1762764936.708889273] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764936.719289504] [bt_navigator]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764936.774718588] [lifecycle_manager_navigation]: [34m[1mHave not received a heartbeat from bt_navigator.[0m[0m
+[component_container_isolated-6] [ERROR] [1762764936.774779031] [lifecycle_manager_navigation]: CRITICAL FAILURE: SERVER bt_navigator IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[component_container_isolated-6] [INFO] [1762764936.774819389] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-6] [INFO] [1762764936.774855335] [lifecycle_manager_navigation]: [34m[1mResetting managed nodes...[0m[0m
+[component_container_isolated-6] [INFO] [1762764936.774870670] [lifecycle_manager_navigation]: [34m[1mDeactivating velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1762764936.775143701] [velocity_smoother]: Deactivating
+[component_container_isolated-6] [INFO] [1762764936.775189406] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[INFO] [robot_state_publisher-4]: process has finished cleanly [pid 2677]
+[component_container_isolated-6] [INFO] [1762764936.898776049] [lifecycle_manager_navigation]: [34m[1mDeactivating waypoint_follower[0m[0m
+[component_container_isolated-6] [WARN] [1762764936.899374921] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764936.899395469] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764936.899410578] [waypoint_follower]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [ERROR] [1762764936.899821097] [lifecycle_manager_navigation]: Failed to change state for node: waypoint_follower
+[component_container_isolated-6] [INFO] [1762764936.899946418] [lifecycle_manager_navigation]: [34m[1mDeactivating bt_navigator[0m[0m
+[component_container_isolated-6] [WARN] [1762764936.900150199] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[component_container_isolated-6] [WARN] [1762764936.900169461] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[component_container_isolated-6] [ERROR] [1762764936.900179129] [bt_navigator]: Unable to start transition 4 from current state cleaningup: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [ERROR] [1762764936.900406986] [lifecycle_manager_navigation]: Failed to change state for node: bt_navigator
+[component_container_isolated-6] [INFO] [1762764936.900457137] [lifecycle_manager_navigation]: [34m[1mDeactivating behavior_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764936.900685660] [behavior_server]: Deactivating
+[component_container_isolated-6] [INFO] [1762764936.900733858] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.024576416] [lifecycle_manager_navigation]: [34m[1mDeactivating planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764937.025585741] [planner_server]: Deactivating
+[component_container_isolated-6] [INFO] [1762764937.025680345] [global_costmap.global_costmap]: Deactivating
+[component_container_isolated-6] [INFO] [1762764937.089508740] [bt_navigator]: Completed Cleaning up
+[component_container_isolated-6] [INFO] [1762764937.089562062] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.089577910] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[component_container_isolated-6] [INFO] [1762764937.089604257] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.195709099] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[component_container_isolated-6] [INFO] [1762764937.195754358] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[component_container_isolated-6] [INFO] [1762764937.227805710] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[component_container_isolated-6] [INFO] [1762764937.227890814] [behavior_server]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764937.252984950] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.253072640] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[component_container_isolated-6] [INFO] [1762764937.253104793] [smoother_server]: Deactivating
+[component_container_isolated-6] [INFO] [1762764937.253133520] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.263392565] [smoother_server]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764937.328641302] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.328686279] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[component_container_isolated-6] [INFO] [1762764937.976238466] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1762764937.976306610] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764937.987143481] [lifecycle_manager_navigation]: [34m[1mDeactivating smoother_server[0m[0m
+[component_container_isolated-6] [WARN] [1762764937.995140549] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764937.995160350] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764937.995167268] [smoother_server]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [ERROR] [1762764937.995439015] [lifecycle_manager_navigation]: Failed to change state for node: smoother_server
+[component_container_isolated-6] [INFO] [1762764937.995464864] [lifecycle_manager_navigation]: [34m[1mDeactivating controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764937.995603089] [controller_server]: Deactivating
+[component_container_isolated-6] [INFO] [1762764937.995659577] [local_costmap.local_costmap]: Deactivating
+[component_container_isolated-6] [INFO] [1762764938.040160079] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.155054199] [lifecycle_manager_navigation]: [34m[1mCleaning up velocity_smoother[0m[0m
+[component_container_isolated-6] [INFO] [1762764938.155334057] [velocity_smoother]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.160734139] [lifecycle_manager_navigation]: [34m[1mCleaning up waypoint_follower[0m[0m
+[component_container_isolated-6] [WARN] [1762764938.160871087] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764938.160899877] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764938.160924761] [waypoint_follower]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [INFO] [1762764938.161196940] [lifecycle_manager_navigation]: [34m[1mCleaning up bt_navigator[0m[0m
+[component_container_isolated-6] [WARN] [1762764938.194459855] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764938.194501556] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764938.194511823] [bt_navigator]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [INFO] [1762764938.195047998] [lifecycle_manager_navigation]: [34m[1mCleaning up behavior_server[0m[0m
+[component_container_isolated-6] [WARN] [1762764938.195169272] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764938.195181205] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764938.195188054] [behavior_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [INFO] [1762764938.195354667] [lifecycle_manager_navigation]: [34m[1mCleaning up planner_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764938.195469114] [planner_server]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.226279682] [global_costmap.global_costmap]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.243173047] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1762764938.243268916] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[component_container_isolated-6] [INFO] [1762764938.269292753] [lifecycle_manager_navigation]: [34m[1mCleaning up smoother_server[0m[0m
+[component_container_isolated-6] [WARN] [1762764938.269458828] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [WARN] [1762764938.269494606] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[component_container_isolated-6] [ERROR] [1762764938.269506249] [smoother_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[component_container_isolated-6] [INFO] [1762764938.269671061] [lifecycle_manager_navigation]: [34m[1mCleaning up controller_server[0m[0m
+[component_container_isolated-6] [INFO] [1762764938.269791829] [controller_server]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.284269690] [local_costmap.local_costmap]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.362781480] [lifecycle_manager_navigation]: [34m[1mManaged nodes have been reset[0m[0m
+[component_container_isolated-6] [INFO] [1762764938.443747314] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[component_container_isolated-6] [INFO] [1762764938.443805574] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.443829856] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[component_container_isolated-6] [INFO] [1762764938.443878467] [amcl]: Deactivating
+[component_container_isolated-6] [INFO] [1762764938.443900243] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.454215042] [amcl]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.476548827] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.476584881] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[component_container_isolated-6] [INFO] [1762764938.476601899] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.476625573] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[component_container_isolated-6] [INFO] [1762764938.476655144] [map_server]: Deactivating
+[component_container_isolated-6] [INFO] [1762764938.476698651] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[component_container_isolated-6] [INFO] [1762764938.486954409] [map_server]: Cleaning up
+[component_container_isolated-6] [INFO] [1762764938.487155471] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[ERROR] [component_container_isolated-6]: process[component_container_isolated-6] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[ERROR] [gzserver-1]: process[gzserver-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [component_container_isolated-6]: sending signal 'SIGTERM' to process[component_container_isolated-6]
+[INFO] [gzserver-1]: sending signal 'SIGTERM' to process[gzserver-1]
+[component_container_isolated-6] [INFO] [1762764941.635196632] [rclcpp]: signal_handler(signum=15)
+[gzserver-1] [INFO] [1762764941.636218956] [rclcpp]: signal_handler(signum=15)
+[gzserver-1] Exception sending a multicast message:Interrupted system call
+[ERROR] [component_container_isolated-6]: process[component_container_isolated-6] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[ERROR] [gzserver-1]: process[gzserver-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [component_container_isolated-6]: sending signal 'SIGKILL' to process[component_container_isolated-6]
+[INFO] [gzserver-1]: sending signal 'SIGKILL' to process[gzserver-1]
+[ERROR] [component_container_isolated-6]: process has died [pid 2681, exit code -9, cmd '/opt/ros/humble/lib/rclcpp_components/component_container_isolated --ros-args --log-level info --ros-args -r __node:=nav2_container --params-file /tmp/launch_params_ewqk2i5e --params-file /tmp/launch_params_tm70s23v -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [gzserver-1]: process has died [pid 2671, exit code -9, cmd 'gzserver -s libgazebo_ros_init.so -s libgazebo_ros_factory.so /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/share/turtlebot_controller/worlds/world_planimetria.model'].
