@@ -1,0 +1,24 @@
+[2.396s] Invoking command in '/home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller': PYTHONPATH=/home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller/build --no-deps symlink_data
+[3.585s] running develop
+[4.361s] running egg_info
+[4.362s] writing turtlebot_controller.egg-info/PKG-INFO
+[4.363s] writing dependency_links to turtlebot_controller.egg-info/dependency_links.txt
+[4.364s] writing entry points to turtlebot_controller.egg-info/entry_points.txt
+[4.365s] writing requirements to turtlebot_controller.egg-info/requires.txt
+[4.365s] writing top-level names to turtlebot_controller.egg-info/top_level.txt
+[4.374s] reading manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+[4.378s] writing manifest file 'turtlebot_controller.egg-info/SOURCES.txt'
+[4.383s] running build_ext
+[4.384s] Creating /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot-controller.egg-link (link to .)
+[4.388s] Installing move_turtle script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.389s] Installing move_turtle_AB script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.389s] Installing turtle_csv_handler script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.390s] Installing turtle_distance_publisher script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.391s] Installing turtle_move_status_data script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.391s] Installing turtle_position_data script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.392s] Installing turtle_velocity_data script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.393s] Installing voice_interface script to /home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/turtlebot_controller
+[4.394s] 
+[4.394s] Installed /home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller
+[4.395s] running symlink_data
+[4.506s] Invoked command in '/home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller' returned '0': PYTHONPATH=/home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leo/Desktop/turtlebot_workspace_vocale/install/turtlebot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/leo/Desktop/turtlebot_workspace_vocale/build/turtlebot_controller/build --no-deps symlink_data
