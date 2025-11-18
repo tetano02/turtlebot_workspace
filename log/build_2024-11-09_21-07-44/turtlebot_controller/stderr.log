@@ -1,5 +1,0 @@
-  File "/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages/script_python/turtle_csv_handler.py", line 136
-    (if self.back_home )
-     ^^
-SyntaxError: f-string: invalid syntax
-

@@ -1,5 +1,0 @@
-  File "/home/ste/my_ros2_ws/install/turtlebot_controller/lib/python3.10/site-packages/script_python/move_turtle_AB.py", line 51
-    0.0, 0.0, 0.0.0, 0.0, 0.0, 0.0,   # Incertezza su z (2D, non usata)
-              ^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-
