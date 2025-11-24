@@ -42,3 +42,5 @@ Una volta avviato il nodo vocale (terminale "Comando Vocale"), puoi dire:
 Ubuntu 22.04
 
 ROS2 Humble
+dipendenze:
+pip install google-generativeai python-dotenv

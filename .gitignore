@@ -7,3 +7,6 @@ logs/
 # File temporanei
 *.pyc
 *~
+# Variabili d'ambiente e chiavi segrete
+.env
+.env.local
