@@ -9,14 +9,17 @@ Non serve configurare manualmente il workspace. Ho creato uno script che install
 1. Clona la repository
 ```
 git clone [https://github.com/TUO_USERNAME/turtlebot_workspace.git](https://github.com/TUO_USERNAME/turtlebot_workspace.git)
-cd turtlebot_workspace
+cd Vocal_Workspace
 ```
 
 2. Installa le dipendeze dell'api Gemini
 ```
 pip install google-generativeai python-dotenv
 ```
-
+3. Iserisci la chiave api
+```
+nano /src/turtlebot_controller/script_python/.env
+```
 4. Avvia tutto
 
 Esegui semplicemente lo script universale:
