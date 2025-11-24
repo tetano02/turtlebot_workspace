@@ -8,7 +8,7 @@ Non serve configurare manualmente il workspace. Ho creato uno script che install
 
 1. Clona la repository
 ```
-git clone [https://github.com/TUO_USERNAME/turtlebot_workspace.git](https://github.com/TUO_USERNAME/turtlebot_workspace.git)
+git clone https://github.com/labate001-byte/Vocal_Workspace.git
 cd Vocal_Workspace
 ```
 
