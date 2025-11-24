@@ -4,7 +4,7 @@ Questo è un fork del workspace TurtleBot3 arricchito con un sistema di controll
 
 🚀 Installazione e Avvio Rapido
 
-Non serve configurare manualmente il workspace. Ho creato uno script che installa le dipendenze, compila il codice e avvia la simulazione automaticamente.
+Non serve configurare manualmente il workspace. Lo script installa le dipendenze, compila il codice e avvia la simulazione automaticamente.
 
 1. Clona la repository
 ```
