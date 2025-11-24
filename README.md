@@ -43,14 +43,11 @@ Lo script farà tutto da solo:
 
 Una volta avviato il nodo vocale (terminale "Comando Vocale"), puoi dire:
 
-"Vieni qui": Il robot verrà verso di te (o eseguirà la logica programmata).
-
-(Aggiungi qui altri comandi se ne hai)
+"Vieni qui" o altri comandi di uguale significato: Gemini deciderà se il comando è valido in base al contesto
 
 🛠️ Requisiti
 
 Ubuntu 22.04
 
-ROS2 Humble
-dipendenze:
-pip install google-generativeai python-dotenv
+Seguire la guida originale di Tetano02
+
