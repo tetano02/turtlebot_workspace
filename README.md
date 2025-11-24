@@ -7,16 +7,23 @@ Questo è un fork del workspace TurtleBot3 arricchito con un sistema di controll
 Non serve configurare manualmente il workspace. Ho creato uno script che installa le dipendenze, compila il codice e avvia la simulazione automaticamente.
 
 1. Clona la repository
-
+```
 git clone [https://github.com/TUO_USERNAME/turtlebot_workspace.git](https://github.com/TUO_USERNAME/turtlebot_workspace.git)
 cd turtlebot_workspace
+```
 
+2. Installa le dipendeze dell'api Gemini
+```
+pip install google-generativeai python-dotenv
+```
 
-2. Avvia tutto
+4. Avvia tutto
 
 Esegui semplicemente lo script universale:
 
+```
 bash avvio/Avvio.sh
+```
 
 
 Lo script farà tutto da solo:
