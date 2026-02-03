@@ -1,58 +1,71 @@
 # TurtleBot Navigation System
 
-Questo progetto implementa un sistema di navigazione autonoma utilizzando ROS2 e Nav2. Il robot TurtleBot è configurato per muoversi in un ambiente simulato (e potenzialmente reale) seguendo obiettivi specifici e salvando i dati di navigazione per l'analisi.
-## Simulazione
-[![Scarica e guarda la simulazione del robot in azione cliccando sulla foto](robot_simulation_thumbnail.png)](robot_simulation.mp4)
+This project implements an autonomous navigation system using ROS2 and Nav2. The TurtleBot robot is configured to move in a simulated environment (and potentially real) following specific goals and saving navigation data for analysis.
+## Simulation
+[![Download and watch the robot simulation in action by clicking on the photo](robot_simulation_thumbnail.png)](robot_simulation.mp4)
 
-## Download Video Simulazione
-[Scarica e guarda la simulazione del robot in azione](robot_simulation.mp4)
-
----
-## Indice
-1. [Introduzione](#introduzione)
-2. [Prerequisiti](#prerequisiti)
-3. [Configurazione di ROS2](#configurazione-di-ros2)
-4. [Installazione dei pacchetti necessari](#installazione-dei-pacchetti-necessari)
-5. [Importazione del progetto](#importazione-del-progetto)
-6. [Avvio della simulazione](#avvio-della-simulazione)
-7. [Struttura dei nodi](#struttura-dei-nodi)
-8. [Configurazione della mappa](#configurazione-della-mappa)
-9. [Fasi della simulazione](#fasi-della-simulazione)
-10. [Sviluppi futuri](#sviluppi-futuri)
+## Download Simulation Video
+[Download and watch the robot simulation in action](robot_simulation.mp4)
 
 ---
-## Visualizzazione comandi da eseguire
+## Table of Contents
+- [TurtleBot Navigation System](#turtlebot-navigation-system)
+  - [Simulation](#simulation)
+  - [Download Simulation Video](#download-simulation-video)
+  - [Table of Contents](#table-of-contents)
+  - [Commands to Execute Visualization](#commands-to-execute-visualization)
+  - [](#)
+  - [Introduction](#introduction)
+  - [Prerequisites](#prerequisites)
+  - [ROS2 Configuration](#ros2-configuration)
+    - [Ubuntu Installation](#ubuntu-installation)
+    - [ROS2 Installation](#ros2-installation)
+  - [Installation of necessary packages Nav2](#installation-of-necessary-packages-nav2)
+  - [Project Import](#project-import)
+  - [Launching the simulation](#launching-the-simulation)
+  - [Node Structure](#node-structure)
+    - [Main node: `move_turtle_AB`](#main-node-move_turtle_ab)
+    - [Support nodes](#support-nodes)
+  - [Launching the nodes](#launching-the-nodes)
+  - [Data Visualization](#data-visualization)
+  - [Map Configuration](#map-configuration)
+  - [Simulation Phases](#simulation-phases)
+  - [Future Developments](#future-developments)
+  - [Authors and Contacts](#authors-and-contacts)
+
+---
+## Commands to Execute Visualization
 ![alt text](https://github.com/tetano02/turtlebot_workspace/blob/main/comandi.png?raw=true)
 ---
-## Introduzione
-Il progetto combina robotica e supporto alla mobilità per assistere pazienti in un contesto riabilitativo. Include la configurazione di ROS2, Nav2, RViz, e Gazebo per la simulazione del TurtleBot.
+## Introduction
+The project combines robotics and mobility support to assist patients in a rehabilitation context. It includes the configuration of ROS2, Nav2, RViz, and Gazebo for TurtleBot simulation.
 
 ---
 
-## Prerequisiti
-- Ubuntu 22.04 con ROS2 Humble installato.
-- `WSL2` (se su Windows).
-- Pacchetti Python necessari installati (vedi [requirements.txt](#)).
+## Prerequisites
+- Ubuntu 22.04 with ROS2 Humble installed.
+- `WSL2` (if on Windows).
+- Necessary Python packages installed (see [requirements.txt](#)).
 
 ---
 
-## Configurazione di ROS2
-### Installazione di Ubuntu
-1. Abilitare WSL:
+## ROS2 Configuration
+### Ubuntu Installation
+1. Enable WSL:
    ```bash
    wsl --install
    ```
-2. Installare Ubuntu Jellyfish:
+2. Install Ubuntu Jellyfish:
    ```bash
    wsl --install -d Ubuntu-22.04
    ```
-3. Configurare l'ambiente:
+3. Configure the environment:
    ```bash
    wsl -d Ubuntu-22.04
    ```
 
-### Installazione di ROS2
-1. Configurare UTF-8:
+### ROS2 Installation
+1. Configure UTF-8:
    ```bash
    locale  # check for UTF-8
    
@@ -63,47 +76,46 @@ Il progetto combina robotica e supporto alla mobilità per assistere pazienti in
    
    locale  # verify settings
    ```
-2. Assicurati che Ubuntu Universal Repository sia attivata
+2. Make sure Ubuntu Universal Repository is enabled
    ```bash
    sudo apt install software-properties-common
    sudo add-apt-repository universe
    ```
-3. Aggiungi la chiave GPG di Ros2
+3. Add ROS2 GPG key
    ```bash
    sudo apt update && sudo apt install curl -y
    sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
    ```
-4. Aggiungi la repository alla lista sorgente:
+4. Add the repository to the source list:
    ```bash
    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
    ```
-5. Prima di avviare l'installazione, check di tutti i pacchetti:
+5. Before starting the installation, check all packages:
    ```bash
    sudo apt update
    sudo apt upgrade
    ```
-6. Installazione di ROS2 e di pacchetti aggiuntivi:
+6. Install ROS2 and additional packages:
    ```bash
    sudo apt install ros-humble-desktop
    sudo apt install ros-dev-tools
    ```
-7. Esegui questo comando per configurare l’ambiente ROS 2 nella tua shell
-corrente
+7. Run this command to configure the ROS 2 environment in your current shell
    ```bash
    source /opt/ros/humble/setup.bash
    ```
 ---
 
-## Installazione dei pacchetti necessari Nav2
-1. Installare i pacchetti Nav2:
+## Installation of required packages Nav2
+1. Install Nav2 packages:
    ```bash
    sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
    ```
-2. Installare i pacchetti TurtleBot per Gazebo:
+2. Install TurtleBot packages for Gazebo:
    ```bash
    sudo apt install ros-humble-turtlebot3-gazebo
    ```
-Per consentire il corretto avviamento, avviare il progetto di base per sicurezza
+To allow proper startup, launch the base project for safety
 ```bash
    source /opt/ros/humble/setup.bash
    export TURTLEBOT3_MODEL=waffle
@@ -111,118 +123,118 @@ Per consentire il corretto avviamento, avviare il progetto di base per sicurezza
    source /usr/share/gazebo/setup.bash
    ros2 launch nav2_bringup tb3_simulation_launch.py
    ```
-In caso non funzionasse, riavviare la piattaforma su cui si sta lavorando.
+If it doesn't work, restart the platform you are working on.
 
 ---
-## Importazione del progetto
-1. Clonare la repository GitHub:
+## Project Import
+1. Clone the GitHub repository:
    ```bash
    git clone https://github.com/tetano02/turtlebot_workspace.git
    ```
-2. Esportare i file nelle directory di Nav2:
+2. Export files to Nav2 directories:
    ```bash
    sudo mkdir /opt/ros/humble/share/turtlebot3_gazebo/models/planimetria_santanna
    sudo cp -r ~/turtlebot_workspace/src/turtlebot_controller/models/planimetria_santanna/* /opt/ros/humble/share/turtlebot3_gazebo/models/planimetria_santanna
    ```
-3. Sostituire il file delle texture Gazebo:
+3. Replace the Gazebo texture file:
    ```bash
    sudo rm /usr/share/gazebo-11/media/materials/scripts/gazebo.material
    sudo cp ~/turtlebot_workspace/src/turtlebot_controller/gazebo.material /usr/share/gazebo-11/media/materials/scripts/
    ```
-4. Per il corretto funzionamento del progetto, eseguire anche i seguenti comandi
+4. For the correct functioning of the project, also execute the following commands
    ```bash
    pip install pandas
    pip upgrade matplotlib
    ```
-   Se l'ultimo comando non dovesse funzionare, usare il seguente comando.
+   If the last command doesn't work, use the following command.
    ```bash
    pip install --upgrade matplotlib
    ```
 ---
 
-## Avvio della simulazione
-1. Preparare l'ambiente:
+## Launching the simulation
+1. Prepare the environment:
    ```bash
    source /opt/ros/humble/setup.bash
    export TURTLEBOT3_MODEL=waffle
    export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
    ```
-   Se non dovesse funzionare, aggiungere anche questo comando
+   If it doesn't work, also add this command
    ```bash
    source /usr/share/gazebo/setup.bash
    ```
-3. Buildare il workspace:
+3. Build the workspace:
    ```bash
    cd turtlebot_workspace
    colcon build
    source install/setup.bash
    ```
-4. Avviare la simulazione:
+4. Launch the simulation:
    ```bash
    ros2 launch turtlebot_controller tb3_santanna_launch.py
    ```
 ---
 
-## Struttura dei nodi
-### Nodo principale: `move_turtle_AB`
-- Gestisce la navigazione autonoma da un punto A a un punto B.
-- Stima la posizione iniziale e invia obiettivi tramite l'Action Client.
+## Node Structure
+### Main node: `move_turtle_AB`
+- Manages autonomous navigation from point A to point B.
+- Estimates the initial position and sends goals via the Action Client.
 
-### Nodi di supporto
-- `turtle_distance_publisher`: Calcola e pubblica la distanza percorsa.
-- `turtle_csv_handler`: Salva i dati di navigazione in formato CSV.
+### Support nodes
+- `turtle_distance_publisher`: Calculates and publishes the distance traveled.
+- `turtle_csv_handler`: Saves navigation data in CSV format.
 
 ---
-## Avvio dei nodi
-Per avviare i nodi seguire i seguenti comandi
-1. Apri una nuova scheda da terminale.
-2. Eseguire il build del workspace:
+## Launching the nodes
+To launch the nodes follow these commands
+1. Open a new tab from terminal.
+2. Build the workspace:
    ```bash
    cd turtlebot_workspace
    colcon build
    source install/setup.bash
    ```
-3. Avvia il nodo che pubblica la distanza:
-   Nodo che pubblica la distanza:
+3. Launch the node that publishes the distance:
+   Node that publishes the distance:
    ```bash
    ros2 run turtlebot_controller turtle_distance_publisher
    ```
-4. Esegui di nuovo i punti 1 e 2
-5. Avvia il nodo che crea i csv con i dati del robot:
-   Nodo che crea i csv:
+4. Execute steps 1 and 2 again
+5. Launch the node that creates csv files with robot data:
+   Node that creates csv:
    ```bash
    ros2 run turtlebot_controller turtle_csv_handler
    ```
-6. Esegui di nuovo i punti 1 e 2
-7. Nodo che permette al robot di muoversi:
+6. Execute steps 1 and 2 again
+7. Node that allows the robot to move:
    ```bash
    ros2 run turtlebot_controller move_turtle_AB
    ```
 ---
-## Visualizzazione dei dati
-Dopo aver eseguito il lancio della simulazione e i nodi, per visualizzare i dati della simulazione è necessario eseguire i seguenti comandi.
+## Data Visualization
+After launching the simulation and the nodes, to visualize the simulation data it is necessary to execute the following commands.
 ```bash
    cd ~/turtlebot_workspace/src/turtlebot_controller/script_python
    python3 elaborate_data.py
 ```
 ---
-## Configurazione della mappa
-1. La planimetria è stata convertita in formato `.pgm` e i parametri settati nel file `.yaml`.
-2. Gazebo è stato configurato con i file di riferimento e aggiungendo i modelli scaricati.
+## Map Configuration
+1. The floor plan was converted to `.pgm` format and parameters set in the `.yaml` file.
+2. Gazebo was configured with reference files and by adding downloaded models.
 ---
-## Fasi della simulazione
-1. **Movimento verso la destinazione**: Il robot si muove verso il letto, salvando i dati.
-2. **Ritorno alla base**: Premendo un bottone simulato, il robot torna alla posizione iniziale.
+## Simulation Phases
+1. **Movement to destination**: The robot moves towards the bed, saving data.
+2. **Return to base**: By pressing a simulated button, the robot returns to the initial position.
 ---
-## Sviluppi futuri
-- Implementazione su hardware reale con:
-  - Configurazione del deambulatore.
-  - Test in ambienti ospedalieri reali.
-- Miglioramenti all'interfaccia utente e all'affidabilità del sistema di navigazione.
+## Future Developments
+- Implementation on real hardware with:
+  - Walker configuration.
+  - Testing in real hospital environments.
+- Improvements to the user interface and navigation system reliability.
 ---
 
-## Autori e contatti 
-Per informazioni o segnalazioni di problemi, contattare il team di sviluppo: 
+## Authors and Contacts 
+For information or bug reports, contact the development team: 
 - [Stefano Agnelli](https://github.com/tetano02)
 - [Michele Giovanelli]()
 - [Wen Wen Sun](https://github.com/sunwenwen2002)
